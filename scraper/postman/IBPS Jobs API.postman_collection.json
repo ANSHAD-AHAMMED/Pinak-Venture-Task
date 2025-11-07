@@ -1,0 +1,41 @@
+{
+  "info": {
+    "name": "IBPS Jobs API",
+    "_postman_id": "f3a0ac2a-2f7e-4c8a-9e20-ibps-jobs-collection",
+    "description": "Postman collection for IBPS Jobs API (list and detail).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "List Jobs",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/jobs/",
+          "host": ["{{base_url}}"],
+          "path": ["api", "jobs", ""]
+        }
+      }
+    },
+    {
+      "name": "Job Detail (by id)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/jobs/1/",
+          "host": ["{{base_url}}"],
+          "path": ["api", "jobs", "1", ""]
+        }
+      }
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://127.0.0.1:8000"
+    }
+  ]
+}

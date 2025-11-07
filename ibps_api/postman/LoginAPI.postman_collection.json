@@ -1,0 +1,34 @@
+{
+  "info": {
+    "_postman_id": "a9b7e6fa-874e-4e60-8d31-21cb13c5a3cd",
+    "name": "Django Login API - JWT Authentication",
+    "description": "Postman collection for testing POST /api/login/ endpoint in Django REST API Task.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login - Get JWT Token",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"username\": \"testuser\",\n    \"password\": \"testpass\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/login/",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8000",
+          "path": ["api", "login", ""]
+        }
+      },
+      "response": []
+    }
+  ]
+}
